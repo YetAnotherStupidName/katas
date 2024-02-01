@@ -26,11 +26,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      - name: Build application
+      - name: Build crap
         run: ci/build-app.sh
-
-      
+     
       - name: Test
         run: ci/unit-test-app.sh
 
-     
+      - name: Upload crap
+        uses: actions/upload-artifact@v4
+        with: 
+          name: code
+          path: .     
