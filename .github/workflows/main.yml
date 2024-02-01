@@ -45,7 +45,7 @@ jobs:
          - name: Download code
            uses: actions/download-artifact@v4
            with:
-            name: get code
+            name: code
             path: .
          - name: run linting 
            uses: super-linter/super-linter/slim@v5 
