@@ -35,7 +35,7 @@ jobs:
       - name: Upload crap
         uses: actions/upload-artifact@v4
         with: 
-          name: code
+          name: crapcode
           path: .     
 
   Linting:
