@@ -11,7 +11,7 @@ on:
     branches: [ "main" ]
 
 env: # Set the secret as an input
-  docker_username: ${{ github.actor }} 
+  docker_username: yetanotherstupidname
   docker_password: ${{ secrets.GITHUB_TOKEN }}
   GIT_COMMIT: ${{ github.sha }}
 
